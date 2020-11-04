@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*?
+Allow: /*.js
+Allow: /*.css
+
+Sitemap: https://winlink-casino.net/sitemap.xml
