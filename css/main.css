@@ -4,12 +4,7 @@
  *
  * Released under the MIT license
  */
-article>ol,li{
-    list-style: circle !important;
-}
-article>ul,li{
-    list-style: circle !important;
-}
+
 ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}
 .infografika{
     float: left;
@@ -337,4 +332,10 @@ body.no-scroll-ios{position:fixed;overflow:hidden;width:100%;height:100%;margin-
 
 .carousel::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+article>ol,li{
+    list-style: circle !important;
+}
+article>ul,li{
+    list-style: circle !important;
 }
