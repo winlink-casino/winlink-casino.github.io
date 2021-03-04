@@ -4,10 +4,10 @@
  *
  * Released under the MIT license
  */
-article>ol{
+article>ol,li{
     list-style: circle !important;
 }
-article>ul{
+article>ul,li{
     list-style: circle !important;
 }
 ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}
