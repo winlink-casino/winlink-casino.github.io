@@ -192,9 +192,9 @@ body.no-scroll-ios{position:fixed;overflow:hidden;width:100%;height:100%;margin-
     border: none;
 }
 
-* {
+/** {
     -ms-overflow-style: none;
-}
+}*/
 
 .slider-general-box>ul, li {
     list-style: none;
