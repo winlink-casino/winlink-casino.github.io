@@ -25,7 +25,7 @@
     <meta name="twitter:image" content="https://winlink-casino.github.io/images/bonuses.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type='application/ld+json'>
         {"@context":"https://schema.org",
@@ -176,23 +176,57 @@
         <div class="slider-general-box">
             <div class="slider-general">
                 <div class="top-slider swiper-container swiper-container-horizontal">
-                    <div class="swiper-wrapper" style="transition-duration: 0ms;">
-                        <div class="swiper-slide">
-                            <a   class="slider-general__link">
-                                <img  src="/images/slide1.webp"  alt="новый провайдер в Винлинк казино " ></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a   class="slider-general__link">
-                                <img  src="/images/slide2.webp" alt="Бонусы в казино Винлинк">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a   class="slider-general__link">
-                                <img src="/images/slide3.webp" alt="турниры в Винлинк" ></a>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination main-slide-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <section class="carousel" aria-label="Gallery">
+                        <ul class="carousel__viewport">
+                            <li id="carousel__slide1"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"> <img src="/images/slide1.webp" alt="новый провайдер в Винлинк казино" >
+                                    <a href="#carousel__slide3"
+                                       class="carousel__prev">last</a>
+                                    <a href="#carousel__slide2"
+                                       class="carousel__next">next</a>
+                                </div>
+                            </li>
+                            <li id="carousel__slide2"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"> <img src="/images/slide2.webp" alt="Бонусы в казино Винлинк" ></div>
+                                <a href="#carousel__slide1"
+                                   class="carousel__prev">prev</a>
+                                <a href="#carousel__slide3"
+                                   class="carousel__next">next</a>
+                            </li>
+                            <li id="carousel__slide3"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"> <img src="/images/slide3.webp" alt="турниры в Винлинк" ></div>
+                                <a href="#carousel__slide2"
+                                   class="carousel__prev">prev</a>
+                                <a href="#carousel__slide1"
+                                   class="carousel__next">first</a>
+                            </li>
+
+                        </ul>
+                        <aside class="carousel__navigation">
+                            <ul class="carousel__navigation-list">
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide1"
+                                       class="carousel__navigation-button">1</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide2"
+                                       class="carousel__navigation-button">2</a>
+                                </li>
+                                <li class="carousel__navigation-item">
+                                    <a href="#carousel__slide3"
+                                       class="carousel__navigation-button">3</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                </div>
             </div>
         </div><!---->
 
@@ -366,18 +400,7 @@
     <p>Copyright © 2020-2021. All rights reserved Winlink Casino.</p>
 </div>
 <script src="/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container',
-        {
-            loop: true,
-            speed: 1200,
-            autoplay: {
-                delay: 8500,
-                disableOnInteraction: false,         },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,         },     });</script>
+
 <!-- Yandex.Metrika counter -->
 <script >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
